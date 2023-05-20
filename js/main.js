@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function () {
     container.addListener((e) => {
 
         let scrollTop = container.scrollTop;
-        // $('.posNum').html(scrollTop)
+        $('.posNum').html(scrollTop)
 
         if(scrollTop >= 82){
             $('.bus_01').addClass('on');
@@ -144,6 +144,19 @@ window.addEventListener('DOMContentLoaded', function () {
         if(scrollTop >= 13800){
             $('.footer_star_05').addClass('on');
         }  
+
+
+
+        if(scrollTop >= 14325){
+            $('.title01_footer').addClass('on');
+        }
+        if(scrollTop >= 14518){
+            $('.title02_footer').addClass('on');
+        }
+
+
+
+
 
         if(scrollTop >= 100) { // 숫자에 따라 아래로 스크롤 했을 때 사라지는 영역의 크기가 바뀝니다.
             if ((scrollTop > lastScrollTop) && (lastScrollTop>0)) { /* &&: AND, 두 값이 모두 참이어야 값이 출력 */
